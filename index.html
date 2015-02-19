@@ -10,78 +10,106 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-<header class='site-header container-fluid'>
-	<div class='container'>
-		<div class='col-md-6 col-xs-12'>
-			<h1>Page Title</h1>
+<header class='navbar navbar-inverse navbar-static-top'>
+	<nav class='container' role='navigation'>
+		<div class='navbar-header'>
+			<a href="/" class='navbar-brand sr-only'><h1>Page Logo</h1></a>
+			<button class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+				<span class='sr-only'>Navigation Toggle</span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
 		</div>
-		<div class='col-md-6 col-xs-12'>
-			<nav role='navigation'>
-				<ul class='nav nav-pills'>
-					<li>
-						<a href="">Link 1</a>
-					</li>
-					<li>
-						<a href="">Link 2</a>
-					</li>
-					<li>
-						<a href="">Link 3</a>
-					</li>
-					<li>
-						<a href="">Link 4</a>
-					</li>
+		<ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+			<li><a href="/">Home</a></li>
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>	
+</header>
+
+<section class='container jumbotron'>
+	<p>Big Giant Image Goes Here</p>
+</section>
+
+<main class='container'>
+	<section id='biography'>
+		<div class='row'>
+			<div class='col-xs-12 col-md-8 col-md-offset-2'>
+				<h2>Title 1</h2>
+				<p>Bacon ipsum dolor amet bresaola andouille shankle t-bone, landjaeger brisket chicken boudin pork chop kielbasa. Bresaola sausage salami jowl, swine frankfurter pork belly tongue strip steak corned beef shank meatball. Short loin bresaola strip steak biltong, ham hock ribeye chicken boudin tenderloin shankle fatback doner venison picanha. Salami hamburger frankfurter tri-tip. Prosciutto ball tip chicken pancetta. Brisket sirloin corned beef shank pork landjaeger beef porchetta cupim.</p>
+
+				<p>Shoulder jowl cupim sausage pastrami ball tip biltong bacon brisket alcatra kevin turducken drumstick venison ground round. Biltong brisket prosciutto pork loin, corned beef alcatra turducken strip steak tenderloin sausage tail chicken jowl andouille. Chuck andouille short loin swine fatback landjaeger tail shankle. T-bone picanha shoulder leberkas jowl meatball corned beef cow ball tip rump bacon bresaola.</p>
+			</div>	
+		</div>
+		<div class='row'>
+			<div class='col-xs-12 col-md-8 col-md-offset-2'>
+				<form method='get' action='mailto:uland.jf@gmail.com'>
+					<button type='submit' class='btn btn-lg btn-primary'>CTA Here</button>	
+				</form>	
+			</div>
+		</div>
+	</section>
+
+	<section id='work'>
+		<div class='col-xs-12 col-md-8 col-md-offset-2'>
+			<h2>Title 2</h2>
+			<nav>
+				<ul class='nav nav-tabs' role='tablist'>
+					<li role='presentation' class='active'><a href="#resumeDownload" data-toggle='tab' data-target='#resumeDownload'>Résumé</a></li>
+					<li role='presentation'><a href="#imageGallery" data-toggle='tab' data-target='#imageGallery'>Images</a></li>
+					<li role='presentation'><a href="#videoGallery" data-toggle='tab' data-target='#videoGallery'>Videos</a></li>
 				</ul>
 			</nav>
-		</div>
-	</div>
-</header>
-<main>
-	<section class='jumbotron'>
-		<div class='container'>
-			<h1>This is a CTA Title</h1>
-			<p>Some subtext is good here.</p>
+			<div class='tab-content'>
+				<div role='tabpanel' class='col-xs-12 center-block text-center tab-pane active' id='resumeDownload'>
+					<h3>Click the button below to download a résumé!</h3>
+					<form method='get' action='http://www.jonuland.com' target='_blank'>
+						<button class='btn btn-lg btn-warning'><i class='glyphicon glyphicon-download'></i> Download Now</button>
+					</form>
+				</div>
+
+				<div role='tabpanel' class='col-xs-12 center-block text-center tab-pane' id='imageGallery'>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+					<div class='col-xs-6'>
+						<img class='img-responsive center-block' src="Qlogo.png" alt='Image'>
+					</div>
+				</div>
+
+				<div role='tabpanel' class='col-xs-12 center-block text-center tab-pane' id='videoGallery'>
+					<div class='embed-responsive embed-responsive-16by9'>
+						<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</section>
-	<section class='col-md-6 col-md-offset-3 text-center'>
-		<div class='row'>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>	
+
+	<section id='contact'>
+		<div class='col-xs-12 col-md-8 col-md-offset-2'>
+			<h2>Title 3</h2>
 		</div>
-		<div class='row'>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>	
-		</div>
-		<div class='row'>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>
-			<div class='col-md-4'>
-				<h1>Here.</h1>
-			</div>	
-		</div>
-		
 	</section>
 </main>
-<footer class='container-fluid footer'>
-	<div class='col-md-6'><p>Left Side</p></div>
-	<div class='col-md-6'><p>Right Side</p></div>
+<footer class='footer'>
+	This is the footer section
 </footer>
 </body>
 </html>

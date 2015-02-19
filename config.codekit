@@ -1516,6 +1516,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Qlogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13864,
+		"inputAbbreviatedPath": "\/Qlogo.png",
+		"outputAbbreviatedPath": "\/Qlogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/stylesheet.css": {
 		"fileType": 16,
 		"ignore": 1,
